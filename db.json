@@ -1,149 +1,19 @@
 {
   "productos": [
     {
-      "id": 1,
-      "nombre": "Jugo de Zanahoria",
-      "precio": "31111"
-    },
-    {
-      "id": 2,
-      "nombre": "Jugo de Naranja",
-      "precio": "1"
-    },
-    {
-      "nombre": "Jugo de Naranja",
-      "precio": "300",
-      "id": 3
-    },
-    {
-      "nombre": "Rib Eye 800g",
-      "precio": "200",
-      "id": 4
-    },
-    {
-      "nombre": "Jugo de Fresa",
-      "precio": "200",
-      "id": 5
-    },
-    {
-      "name": "Red Bull",
-      "price": 95,
-      "id": 6
-    },
-    {
-      "name": "Azucar",
-      "price": 500,
-      "id": 7
-    },
-    {
-      "name": "Azucar",
-      "price": 500,
-      "id": 8
-    },
-    {
-      "name": "Azucar",
-      "price": 500,
-      "id": 9
-    },
-    {
-      "name": "Azucar",
-      "price": 500,
-      "id": 10
-    },
-    {
-      "name": "ron",
-      "price": 450,
-      "id": 11
-    },
-    {
-      "name": "wodka",
-      "price": 500,
-      "id": 12
-    },
-    {
-      "name": "Mayonesa",
-      "price": 135,
-      "id": 13
-    },
-    {
-      "name": "Tomates",
-      "price": 50,
-      "id": 14
-    },
-    {
-      "name": "Chicle",
-      "price": 45,
-      "id": 15
-    },
-    {
-      "name": "Palitos",
-      "price": 35,
-      "id": 16
-    },
-    {
-      "name": "Jamon",
-      "price": 126,
-      "id": 17
-    },
-    {
-      "nombre": "Mostaza",
-      "precio": 89,
-      "id": 18
-    },
-    {
-      "nombre": "Rosas",
-      "precio": 50,
-      "id": 19
-    },
-    {
       "nombre": "Limones",
-      "precio": 75,
-      "id": 20
+      "precio": "100",
+      "id": 1
     },
     {
-      "nombre": "Vino",
-      "precio": 250,
-      "id": 21
+      "nombre": "arroz",
+      "precio": "55",
+      "id": 2
     },
     {
-      "nombre": "Cerveza",
-      "precio": 320,
-      "id": 22
-    },
-    {
-      "nombre": "Chicle",
-      "precio": 50,
-      "id": 23
-    },
-    {
-      "nombre": "Tequila",
-      "precio": 500,
-      "id": 24
-    },
-    {
-      "nombre": "Red Bull",
-      "precio": 50,
-      "id": 25
-    },
-    {
-      "nombre": "Tequila",
-      "precio": 550,
-      "id": 26
-    },
-    {
-      "nombre": "Azucar",
-      "precio": 500,
-      "id": 27
-    },
-    {
-      "nombre": "Red Bull",
-      "precio": 3000,
-      "id": 28
-    },
-    {
-      "nombre": "Tequila",
-      "precio": 213213,
-      "id": 29
+      "nombre": "quilmes",
+      "precio": "320",
+      "id": 3
     }
   ]
 }

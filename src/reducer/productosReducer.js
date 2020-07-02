@@ -6,16 +6,20 @@ import {
   START_PRODUCTS_DOWNLOAD,
   PRODUCTS_DONWLOAD_SUCCESS,
   PRODUCTS_DONWLOAD_ERROR,
-  GET_PRODUCT_ELIMINATE,
+  INIT_PRODUCT_ELIMINATE,
   PRODUCT_ELIMINATED_SUCCESS,
   PRODUCT_ELIMINATED_ERROR,
+  GET_EDIT_PRODUCT,
+  INIT_EDIT_PRODUCT,
+  EDIT_PRODUCT_SUCCESS,
+  EDIT_PRODUCT_ERROR,
 } from "../types";
 
 const initialState = {
   products: [],
   error: false,
   loading: false,
-  eliminateProduct: null,
+  productSelected: null,
 };
 
 const productsReducer = (state = initialState, action) => {
@@ -51,6 +55,49 @@ const productsReducer = (state = initialState, action) => {
     case PRODUCTS_DONWLOAD_ERROR:
       return {
         ...state,
+        error: action.payload.error,
+      };
+    case INIT_PRODUCT_ELIMINATE:
+      return {
+        ...state,
+        loading: action.payload.loading,
+      };
+    case PRODUCT_ELIMINATED_SUCCESS:
+      return {
+        ...state,
+        products: state.products.filter(
+          (product) => product.id !== action.payload.id
+        ),
+        loading: action.payload.loading,
+      };
+    case PRODUCT_ELIMINATED_ERROR:
+      return {
+        ...state,
+        error: action.payload.error,
+      };
+    case GET_EDIT_PRODUCT:
+      return {
+        ...state,
+        productSelected: action.payload.product,
+      };
+    case INIT_EDIT_PRODUCT:
+      return {
+        ...state,
+        loading: action.payload.loading,
+      };
+    case EDIT_PRODUCT_SUCCESS:
+      return {
+        ...state,
+        loading: action.payload.loading,
+        products: state.products.map((product) =>
+          product.id === action.payload.id
+            ? (product = action.payload.product)
+            : product
+        ),
+        productSelected: null,
+      };
+    case EDIT_PRODUCT_ERROR:
+      return {
         error: action.payload.error,
       };
     default:
